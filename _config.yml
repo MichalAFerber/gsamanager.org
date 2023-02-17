@@ -1,6 +1,6 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
+title: GSA Manager
+logo: /assets/img/gsamanager.jpg
+description: GSA Manager is an associational and club management application.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
