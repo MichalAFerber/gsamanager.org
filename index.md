@@ -8,7 +8,7 @@ The Windows application comes complete with membership, inventory, checkout and 
 
 Customizations can be done on a case by case basis. This application can also be used for your small business, great for any bookstore or consignment shop.   
 
-*Demo databases are available.*   
+*Demo databases are available on request*   
 
 * * *
 
@@ -17,7 +17,7 @@ Customizations can be done on a case by case basis. This application can also be
 *   [GSA Manager Install](install/publish.htm)
 *   [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
 *   [Crystal Reports for Visual Studio SP30 Runtime 32-bit MSI](https://origin-az.softwaredownloads.sap.com/public/file/0020000000195592021)
-*   [DYMO Label Software 8.7.4](https://www.itninja.com/link/tracker/6871)
+*   [DYMO Label Software 8.7.4](https://s3.amazonaws.com/download.dymo.com/dymo/Software/Win/DLS8Setup8.7.4.exe)
 *   [GSA Support Files](downloads/GSA%20Manager.zip)
 
 * * *
