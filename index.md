@@ -15,9 +15,9 @@ Customizations can be done on a case by case basis. This application can also be
 ## Downloads
 
 *   [GSA Manager Install](install/publish.htm)
-*   [.NET Framework 4.8](downloads/dotnetfx48setup.exe)
-*   [Crystal Reports for Visual Studio SP30 Runtime 32-bit MSI](downloads/CR13SP30MSI32_0-10010309.MSI)
-*   [DYMO Label Software 8.7.4](downloads/DLS8Setup8.7.4.exe)
+*   [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+*   [Crystal Reports for Visual Studio SP30 Runtime 32-bit MSI](https://origin-az.softwaredownloads.sap.com/public/file/0020000000195592021)
+*   [DYMO Label Software 8.7.4](https://www.itninja.com/link/tracker/6871)
 *   [GSA Support Files](downloads/GSA%20Manager.zip)
 
 * * *
