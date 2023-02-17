@@ -4,11 +4,11 @@ layout: default
 
 # About
 
-GSA Manager is an associational and club management application. It comes complete with membership, inventory, checkout and contact management. It comes ready to go with Authorize.net for payment processing. GSA Manager can use card swipes, cash drawers, bar code scanners as well as label and receipt printers.   
+The Windows application comes complete with membership, inventory, checkout and contact management. It comes ready to go with Authorize.net or Braintree for payment processing. GSA Manager can use card swipes, cash drawers, bar code scanners as well as label and receipt printers.   
 
 Customizations can be done on a case by case basis. This application can also be used for your small business, great for any bookstore or consignment shop.   
 
-Demo databases are available.   
+*Demo databases are available.*   
 
 * * *
 
@@ -20,11 +20,15 @@ Demo databases are available.
 *   [DYMO Label Software 8.7.4](downloads/DLS8Setup8.7.4.exe)
 *   [GSA Support Files](downloads/GSA%20Manager.zip)
 
+* * *
+
 ## Software
 
 *   [Authorize.Net Payment Gateway](https://www.authorize.net/)
 *   [Braintree Payment Gateway](https://www.braintreepayments.com/)
 *   [SAP Crystal Reports, Developer for Visual Studio Downloads](https://wiki.scn.sap.com/wiki/display/BOBJ/Crystal+Reports%2C+Developer+for+Visual+Studio+Downloads)
+
+* * *
 
 ## Hardware
 
