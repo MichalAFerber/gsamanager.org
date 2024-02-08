@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="GSAManager.exe" version="2024.02.08.186" publicKeyToken="c068cbe26702bc3e" language="en" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="GSA-Logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GSAManager" version="2024.2.8.186" publicKeyToken="C068CBE26702BC3E" language="neutral" processorArchitecture="x86" />
+    <commandLine file="GSAManager.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="APGUSBQFDNET40.dll" size="39936">
+      <assemblyIdentity name="APGUSBQFDNET40" version="1.3.1.1" publicKeyToken="C00DE953323446E0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XfxGTCXnB8qGL2/Kn0j83HmCE7fWx1Rf5VP9WOxcM3o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Braintree.dll" size="549888">
+      <assemblyIdentity name="Braintree" version="5.3.0.0" publicKeyToken="31B586F34D3E96C7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>22wQpFglNzu6GYw2CdZul3PBt/DPACluMqQLnFEmJEA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GSAManager.exe" size="4156344">
+      <assemblyIdentity name="GSAManager" version="2024.2.8.186" publicKeyToken="C068CBE26702BC3E" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9Hm0EW0uOy9PTXLOY7KXWC+i09oGlh+06+tpE7/u0FY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.Dymo.dll" size="61440">
+      <assemblyIdentity name="Interop.Dymo" version="2.0.0.0" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>a+dA4ahcqyMLHl6B3i7jioELCpl6jFZtusenPaUDTcA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.StdType.dll" size="11776">
+      <assemblyIdentity name="Interop.StdType" version="2.0.0.0" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BD3RYu4HpEPm6OIPE9ZDd15jRmIY0muqq3Gy+TPIKeM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="16384">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1s35YcbScS/hlYgV5Rowlg15//Hpd4i3dBYn26ly6Pc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="GSA-Logo.ico" size="49337">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>v4NtGbzJYVe8BwxZQK+mMM5Mb4HqvF/6fJmmPuTMyrk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GSA-Logo.jpg" size="58298">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5Lw3iK3TtSRThv+caNnHC25Prjm0Yr8E60zxHt+g6UQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GSA-Logo-small.jpg" size="18932">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZMQvg6uJwF5GtLTG3AoOc7dqK/RbVghxz8grZwRHamE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GSAManager.exe.config" size="429">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CVFwQLv5h8uwXQxmxqWX9fbdrN9pWc5UhE1ofpKU8bU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=AzureAD\MichalFerber" issuerKeyHash="7a97f8281fe13c6a4ff333eedd9d8d8747d6b400" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>VcZGkvLwrMvQGhaUVdNZsO/Qm5s=</DigestValue></Reference></SignedInfo><SignatureValue>tasLQnBChSUl55Pk0OUfj4Q99i5ry0B9bONtSiOnH89VWvwyUcVrUk1mvtxHdwHn5aIKXOQZIdj2O+ePDzuKyD81qMZmyACwwACvv4RmmPuLx6/vD42gA1F0+hD2YxBGl6xyInkkfu1N9A0gt0/UPGzDOerZB/Dw79KlGdX3+is=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2HTvhhErovdhRa0bLSVdM3sPCXHCIahAVHlfeqeNIk8fAn9wrMF9x0+AHZWtZrps+FJwFNoU0iB9hQKZFe9Q8vrnNxcmacZ2OOJ/iEWFdiOUXTxqeWjFBE64vYKD1KJfQOgzQJkVSrfAOyROTnuX3y7ftnnpii8LmsNglJccVMU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9b9bd0efb059d35594161ad0cbacf0f29246c655" Description="" Url=""><as:assemblyIdentity name="GSAManager.exe" version="2024.02.08.186" publicKeyToken="c068cbe26702bc3e" language="en" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AzureAD\MichalFerber</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>FAjY7+nAvtl/lFSQib9WP2wfHBU=</DigestValue></Reference></SignedInfo><SignatureValue>WKk0yZavo8kpco9h7/qB7SaZFJQlOuQSWKDY6DNwS2AQUYqSMuc/qt23wQZbtEM6i3LjH8lKSoqtEKdx8yZTY8apugnh6ouiuVW+nbgrdD//aiNHSU1/yBGNscOotnv81LwoXhL35fNXJs90ioyEGalxiYc+P969PF2ypzYR8b4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2HTvhhErovdhRa0bLSVdM3sPCXHCIahAVHlfeqeNIk8fAn9wrMF9x0+AHZWtZrps+FJwFNoU0iB9hQKZFe9Q8vrnNxcmacZ2OOJ/iEWFdiOUXTxqeWjFBE64vYKD1KJfQOgzQJkVSrfAOyROTnuX3y7ftnnpii8LmsNglJccVMU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQPLgltqBDOapDPF48K1IHjDANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigAQQB6AHUAcgBlAEEARABcAE0AaQBjAGgAYQBsAEYAZQByAGIAZQByMB4XDTI0MDIwODE5MTAwNloXDTI1MDIwODAxMTAwNlowMzExMC8GA1UEAx4oAEEAegB1AHIAZQBBAEQAXABNAGkAYwBoAGEAbABGAGUAcgBiAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2HTvhhErovdhRa0bLSVdM3sPCXHCIahAVHlfeqeNIk8fAn9wrMF9x0+AHZWtZrps+FJwFNoU0iB9hQKZFe9Q8vrnNxcmacZ2OOJ/iEWFdiOUXTxqeWjFBE64vYKD1KJfQOgzQJkVSrfAOyROTnuX3y7ftnnpii8LmsNglJccVMUCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCeyaNpXFdxyNQdcvGLq7vBCL2j0kQULAqj9QU0lvwqOjjWAGWDiMAaxARougoavB8X/awvEblQw+PQTHcyecMwMZXWEp1KbIDLcEdSXgTi7q8mF0WmnMfMpXzBR9xeWG1ePdEq9+g2Z6ABc1XvGg6XsO3nBH8vZen8PTB6FSBxsg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
