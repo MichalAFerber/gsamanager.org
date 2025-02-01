@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Downloads
 ---
 
-# Downloads
+## Software
 
 *   [GSA Support Files](GSA%20Manager.zip)
