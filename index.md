@@ -1,5 +1,7 @@
 ---
 layout: default
+title: GSA Manager
+Description: GSA Manager is an associational and club management application.
 ---
 
 The Windows application comes complete with membership, inventory, checkout and contact management. It comes ready to go with Authorize.net or Braintree for payment processing. GSA Manager can use card swipes, cash drawers, bar code scanners as well as label and receipt printers.   
