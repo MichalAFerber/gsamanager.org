@@ -429,3 +429,7 @@ footer a:hover {
     margin-left: 10px; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+ul {
+  padding: 25px !important;
+  margin-inline-start: 5px !important;
+  margin-inline-end: 0px !important; }
