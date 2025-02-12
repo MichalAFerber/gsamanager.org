@@ -9,3 +9,4 @@ repository: MichalAFerber/gsamanager.org
 plugins:
   - jekyll-remote-theme
   - jekyll-target-blank
+  - jekyll-sitemap
