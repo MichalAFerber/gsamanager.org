@@ -365,6 +365,7 @@ DEPENDENCIES
   github-pages
   html-proofer (~> 3.0)
   jekyll-remote-theme
+  jekyll-sitemap
   jekyll-target-blank
   jekyll-theme-tactile!
   kramdown-parser-gfm
