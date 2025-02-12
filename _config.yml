@@ -1,8 +1,9 @@
 title: GSA Manager
-description: GSA Manager is an associational and club management application.
+description: GSA Manager is an association and club management application.
 show_downloads: true
 google_analytics:
 remote_theme: pages-themes/tactile@v0.2.0
 
 plugins:
-- jekyll-remote-theme
+  - jekyll-remote-theme
+  - jekyll-target-blank

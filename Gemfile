@@ -6,3 +6,4 @@ gemspec
 
 gem "jekyll-remote-theme"
 gem "kramdown-parser-gfm"
+gem 'jekyll-target-blank'
