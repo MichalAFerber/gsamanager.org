@@ -1,6 +1,6 @@
 ![Thumbnail of GSA Manager](thumbnail.png)
 
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/MichalAFerber)](https://x.com/MichalAFerber)
+[![Deploy Jekyll site to Pages](https://github.com/MichalAFerber/gsamanager.org/actions/workflows/jekyll.yml/badge.svg)](https://github.com/MichalAFerber/gsamanager.org/actions/workflows/jekyll.yml) [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/MichalAFerber)](https://x.com/MichalAFerber)
 
 # GSA Manager
 
