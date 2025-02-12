@@ -1,7 +1,5 @@
 ---
 layout: default
-title: GSA Manager
-Description: GSA Manager is an association and club management application.
 ---
 
 This Windows application comes complete with membership, inventory, checkout and contact management. It comes ready to go with Authorize.net or Braintree for payment processing. GSA Manager can use card swipes, cash drawers, bar code scanners as well as label and receipt printers.   
@@ -10,7 +8,10 @@ Customizations can be done on a case by case basis. This application can also be
 
 **Demo databases are available on request**
 
-<a href="https://github.com/MichalAFerber/gsamanager.org"><img src="assets/img/GitHub_Logo.png" height="50px" alt="GitHub Logo"></a>
+<a href="https://github.com/MichalAFerber/gsamanager.org"><img src="assets/img/GitHub_Logo.png" height="50px" alt="GitHub Logo"></a>  
+![Maintained_yes](https://img.shields.io/badge/Maintained%3F-yes-green.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/MichalAFerber/gsamanager.org)   
+![Microsoft SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)  
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/MichalAFerber)](https://x.com/MichalAFerber)  
 
 * * *
 

@@ -1,6 +1,8 @@
 ![Thumbnail of GSA Manager](thumbnail.png)
 
-[![Deploy Jekyll site to Pages](https://github.com/MichalAFerber/gsamanager.org/actions/workflows/jekyll.yml/badge.svg)](https://github.com/MichalAFerber/gsamanager.org/actions/workflows/jekyll.yml) [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/MichalAFerber)](https://x.com/MichalAFerber)
+![Maintained_yes](https://img.shields.io/badge/Maintained%3F-yes-green.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/MichalAFerber/gsamanager.org)   
+![Microsoft SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)  
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/MichalAFerber)](https://x.com/MichalAFerber) 
 
 # GSA Manager
 

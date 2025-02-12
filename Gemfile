@@ -7,3 +7,4 @@ gemspec
 gem "jekyll-remote-theme"
 gem "kramdown-parser-gfm"
 gem 'jekyll-target-blank'
+gem "github-pages", group: :jekyll_plugins
