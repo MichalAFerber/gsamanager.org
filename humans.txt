@@ -1,0 +1,12 @@
+/* TEAM */
+Developer: Michal A. Ferber
+Site: https://gsamanager.org
+Contact: https://gsamanager.org/#contact
+
+/* SITE */
+Last update: 2025-02-12
+Language: English
+Standards: HTML5, CSS3
+Software: Jekyll, Just the Docs
+Hosting: GitHub Pages
+Platform: Microsoft Azure (application)

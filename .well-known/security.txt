@@ -1,0 +1,3 @@
+Contact: https://gsamanager.org/#contact
+Preferred-Languages: en
+Canonical: https://gsamanager.org/.well-known/security.txt

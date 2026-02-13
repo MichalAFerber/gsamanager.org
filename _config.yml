@@ -1,12 +1,50 @@
 url: "https://gsamanager.org"
 title: GSA Manager
-description: GSA Manager is an association and club management application.
-show_downloads: true
-google_analytics:
-remote_theme: pages-themes/tactile@v0.2.0
+description: All-in-one point of sale, inventory, CRM, and task management software for associations, clubs, and small businesses.
+og_image: /screenshots/gsamanager-crm1.webp
+
+# Social/SEO image (used by jekyll-seo-tag for og:image)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /screenshots/gsamanager-crm1.webp
+
+remote_theme: just-the-docs/just-the-docs@v0.10.1
 repository: MichalAFerber/gsamanager.org
+
+color_scheme: default
+
+# Navigation
+nav_enabled: false
+
+# Search
+search_enabled: false
+
+# Footer
+gh_edit_link: false
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: "&copy; GSA Manager. This website is <a href=\"https://github.com/MichalAFerber/gsamanager.org\">open source</a>. GSA Manager is a commercial product. <a href=\"/privacy\">Privacy Policy</a>."
+
+# Heading anchor links
+heading_anchors: true
+
+# External links open in new tab
+callouts:
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: red
 
 plugins:
   - jekyll-remote-theme
   - jekyll-target-blank
   - jekyll-sitemap
+  - jekyll-seo-tag
+
+include:
+  - .well-known
