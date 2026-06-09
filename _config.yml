@@ -9,6 +9,14 @@ defaults:
       path: ""
     values:
       image: /screenshots/gsamanager-crm1.webp
+  # The /install/ directory is a ClickOnce download landing page. It is
+  # blocked in robots.txt and the index page is a redirect, so keep it out
+  # of the sitemap to avoid "Page with redirect" / "Blocked by robots.txt"
+  # signals in Google Search Console.
+  - scope:
+      path: "install"
+    values:
+      sitemap: false
 
 remote_theme: just-the-docs/just-the-docs@v0.10.1
 repository: MichalAFerber/gsamanager.org
