@@ -8,14 +8,14 @@ search_exclude: true
 # Privacy Policy
 {: .fs-9 }
 
-Last updated: February 12, 2025
+Last updated: June 15, 2026
 {: .fs-6 .fw-300 }
 
 ---
 
 ## Website Analytics
 
-This website uses [Google Analytics 4](https://marketingplatform.google.com/about/analytics/) (GA4) to understand how visitors interact with the site. GA4 may collect information such as pages visited, time spent on pages, and general geographic location. Google Analytics uses cookies to collect this data. You can learn more about how Google uses data at [google.com/policies/privacy/partners](https://www.google.com/policies/privacy/partners/). You can opt out of Google Analytics by installing the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout).
+This website uses [Plausible Analytics](https://plausible.io/), a privacy-friendly analytics tool, to understand how visitors interact with the site. Plausible collects aggregated information such as pages visited and general geographic location. It does not use cookies, does not collect personal data, and does not track visitors across websites or over time. Analytics data is processed on a self-hosted Plausible instance and is not shared with third parties. Because no personal data is collected and no cookies are used, there is nothing to opt out of.
 
 ## Contact Form
 
