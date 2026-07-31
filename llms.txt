@@ -1,0 +1,12 @@
+# GSA Manager
+
+> All-in-one point of sale, inventory, CRM, and task management software for associations, clubs, and small businesses. Windows desktop application, actively developed since 2007.
+
+## Pages
+
+- [Home](https://gsamanager.org/)
+- [Privacy Policy](https://gsamanager.org/privacy/)
+
+## Source
+
+- [GitHub repository](https://github.com/MichalAFerber/gsamanager.org)

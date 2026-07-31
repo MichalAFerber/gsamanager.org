@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /install/
 
-Sitemap: https://gsamanager.org/sitemap.xml
+Sitemap: https://gsamanager.org/sitemap-index.xml
