@@ -1,7 +1,7 @@
 url: "https://gsamanager.org"
 title: GSA Manager
 description: All-in-one point of sale, inventory, CRM, and task management software for associations, clubs, and small businesses.
-og_image: /screenshots/gsamanager-crm1.webp
+og_image: /og.png
 
 # Social/SEO image (used by jekyll-seo-tag for og:image)
 defaults:
@@ -13,9 +13,9 @@ defaults:
       # 1200x630 convention — scrapers reserve layout from these before fetching,
       # so a wrong value is worse than none.
       image:
-        path: /screenshots/gsamanager-crm1.webp
-        width: 1410
-        height: 635
+        path: /og.png
+        width: 1200
+        height: 630
   # The /install/ directory is a ClickOnce download landing page. It is
   # blocked in robots.txt and the index page is a redirect, so keep it out
   # of the sitemap to avoid "Page with redirect" / "Blocked by robots.txt"

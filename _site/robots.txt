@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /install/
-
-Sitemap: https://gsamanager.org/sitemap.xml
