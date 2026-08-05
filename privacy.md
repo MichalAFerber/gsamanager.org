@@ -6,10 +6,8 @@ search_exclude: true
 ---
 
 # Privacy Policy
-{: .fs-9 }
 
 Last updated: June 15, 2026
-{: .fs-6 .fw-300 }
 
 ---
 

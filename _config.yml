@@ -38,38 +38,24 @@ turnstile_sitekey: "0x4AAAAAAD-B7hIU5QqSXReP"
 support_email: "michal@gsamanager.org"
 mailer_product: "gsamanager_org"
 
-remote_theme: just-the-docs/just-the-docs@v0.10.1
+remote_theme: pages-themes/cayman@v0.2.0
 repository: MichalAFerber/gsamanager.org
 
-color_scheme: default
 
 # Navigation
-nav_enabled: false
 
 # Search
-search_enabled: false
 
 # Footer
-gh_edit_link: false
-back_to_top: true
-back_to_top_text: "Back to top"
 
-footer_content: "&copy; GSA Manager. This website is <a href=\"https://github.com/MichalAFerber/gsamanager.org\">open source</a>. GSA Manager is a commercial product. <a href=\"/privacy\">Privacy Policy</a>."
 
 # Heading anchor links
-heading_anchors: true
 
 # External links open in new tab
-callouts:
-  note:
-    title: Note
-    color: blue
-  warning:
-    title: Warning
-    color: red
-
 plugins:
   - jekyll-remote-theme
+  # cayman's layout renders site.github.* in its header and footer.
+  - jekyll-github-metadata
   # Was active via the github-pages gem's default set, never listed here.
   # The source writes links relative (install/publish.htm); this is what turns
   # them into /install/publish.htm.
