@@ -19,7 +19,7 @@ gem "jekyll-relative-links", "0.6.1"
 gem "jekyll-seo-tag", "2.8.0"
 gem "jekyll-sitemap", "1.4.0"
 gem "jekyll-target-blank", "2.0.2"
-gem "just-the-docs", "0.12.0"
+gem "jekyll-github-metadata", "2.16.1"
 gem "kramdown-parser-gfm", "1.1.0"
 
 
