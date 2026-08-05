@@ -68,9 +68,49 @@
   font-size: 0.95rem;
 }
 
-// The Privacy link sits between the content and the credit line, centred.
+// cayman's .btn is built for the dark header: translucent white text on a
+// translucent white ground. In the content area that renders as an invisible
+// button, which is exactly what the contact form shipped with — the field was
+// there, focusable and clickable, and simply could not be seen. Give the submit
+// button the content area's contrast. Scoped to the form, so the header's
+// View on GitHub / Install buttons keep cayman's styling untouched.
+.contact-actions .btn {
+  margin-bottom: 0;
+  padding: 0.6rem 1.3rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: $header-bg-color;
+  border-color: $header-bg-color;
+
+  &:hover {
+    color: #fff;
+    background-color: $header-bg-color;
+    border-color: $header-bg-color;
+    filter: brightness(1.08);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    filter: none;
+    opacity: 0.6;
+  }
+}
+
+// §1 credit line: centred, with no rule above it. cayman draws a border-top on
+// .site-footer and pads 2rem above it; both go, so Privacy and the credit line
+// read as one block instead of two separated by a line.
+.site-footer {
+  padding-top: 0;
+  margin-top: 0.35rem;
+  text-align: center;
+  border-top: 0;
+}
+
+// Privacy sits directly above the credit line, with the gap above it instead.
 .site-privacy {
-  margin: 2rem 0 0;
+  margin: 2.5rem 0 0;
   text-align: center;
   font-size: 0.9rem;
 }
