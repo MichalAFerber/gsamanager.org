@@ -46,7 +46,3 @@ Supported hardware includes
 Questions about your installation, or about the files above.
 
 {% include contact-form.html %}
-
----
-
-What happens to what you send is described in the [Privacy Policy](privacy.md).

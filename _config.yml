@@ -5,7 +5,7 @@ url: "https://gsamanager.org"
 # empty value is not nil, so nothing can fill it in.
 baseurl: ""
 title: GSA Manager
-description: All-in-one point of sale, inventory, CRM, and task management software for associations, clubs, and small businesses.
+description: All-in-one point of sale, inventory, CRM, and task management software for associations, clubs, and small businesses. Retiring February 2027, after 20 years in production since 2007.
 og_image: /og.png
 
 # Social/SEO image (used by jekyll-seo-tag for og:image)
@@ -34,12 +34,13 @@ defaults:
 # secret it pairs with lives only on the mailer. mailer_product is the herald
 # registry slug that selects the from address, recipient, Origin allowlist and
 # Turnstile secret; it must match the row for `gsamanager_org`.
-turnstile_sitekey: "0x4AAAAAAD-B7hIU5QqSXReP"
+turnstile_sitekey: "0x4AAAAAAD3zZhlPo_O_mrmP"
 support_email: "michal@gsamanager.org"
 mailer_product: "gsamanager_org"
 
 remote_theme: pages-themes/cayman@v0.2.0
 repository: MichalAFerber/gsamanager.org
+repo_url: "https://github.com/MichalAFerber/gsamanager.org"
 
 
 # Navigation
