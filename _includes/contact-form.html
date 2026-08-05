@@ -1,0 +1,94 @@
+{%- comment -%}
+  The estate's standard contact form (§6/§7), as a Jekyll include.
+
+  It renders only when `turnstile_sitekey` is set in _config.yml. Until then it
+  shows a plain-text address and no mailto: link — activation is a launch step,
+  and §10 does not want a scrapeable address sitting on the page meanwhile.
+
+  `mailer_product` is the herald registry slug. It selects the mailer's
+  per-product config: from address, recipient, Origin allowlist and Turnstile
+  secret. Both values live in _config.yml so the page and the registry cannot
+  drift apart quietly.
+{%- endcomment -%}
+
+{% if site.turnstile_sitekey %}
+<form id="contact-form" class="contact-form" novalidate>
+  <div class="contact-row">
+    <label class="contact-field">
+      <span>Name</span>
+      <input name="name" type="text" required maxlength="100" autocomplete="name">
+    </label>
+    <label class="contact-field">
+      <span>Email</span>
+      <input name="email" type="email" required maxlength="254" autocomplete="email">
+    </label>
+  </div>
+  <label class="contact-field">
+    <span>Subject</span>
+    <input name="subject" type="text" required maxlength="150">
+  </label>
+  <label class="contact-field">
+    <span>Message</span>
+    <textarea name="message" required maxlength="5000" rows="6"></textarea>
+  </label>
+
+  <div class="cf-turnstile" data-sitekey="{{ site.turnstile_sitekey }}" data-theme="auto"></div>
+
+  <div class="contact-actions">
+    <button type="submit" class="btn btn-primary">Send message</button>
+    <p id="contact-status" role="status" aria-live="polite"></p>
+  </div>
+  <noscript>
+    <p>This form needs JavaScript enabled. You can reach us at <strong>{{ site.support_email }}</strong>.</p>
+  </noscript>
+</form>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+  (() => {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+    const status = document.getElementById('contact-status');
+    const supportEmail = {{ site.support_email | jsonify }};
+    const product = {{ site.mailer_product | jsonify }};
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type=submit]');
+      const data = Object.fromEntries(new FormData(form).entries());
+      if (!data['cf-turnstile-response']) {
+        status.textContent = 'Please complete the verification challenge.';
+        return;
+      }
+      btn.disabled = true;
+      status.textContent = 'Sending…';
+      try {
+        const res = await fetch(`https://mailer.thompsonblack.us/contact/${product}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        // Parse defensively: an edge error (e.g. 502) returns an HTML page, not JSON.
+        let out = null;
+        try { out = await res.json(); } catch {}
+        if (res.ok && out && out.sent) {
+          form.reset();
+          if (window.turnstile) window.turnstile.reset();
+          status.textContent = "Thanks — your message is on its way. We'll reply within 24–48 hours.";
+        } else {
+          const detail = (out && out.error) || 'Something went wrong.';
+          status.textContent = detail + ' (HTTP ' + res.status + ') — please email ' + supportEmail + '.';
+          btn.disabled = false;
+        }
+      } catch {
+        status.textContent = 'Network error — please email ' + supportEmail + '.';
+        btn.disabled = false;
+      }
+    });
+  })();
+</script>
+{% else %}
+<p class="contact-fallback">
+  The contact form is being set up. In the meantime, reach us at
+  <strong>{{ site.support_email }}</strong> — we typically respond within 24–48 hours.
+</p>
+{% endif %}
