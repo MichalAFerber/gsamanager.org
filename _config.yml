@@ -1,4 +1,9 @@
 url: "https://gsamanager.org"
+# Empty on purpose, and explicit. jekyll-github-metadata fills `baseurl` in from
+# the repository whenever it is nil or "/" — which is how every URL on this site,
+# canonical included, once acquired a /pages/<owner>/<repo>/ prefix. A written-down
+# empty value is not nil, so nothing can fill it in.
+baseurl: ""
 title: GSA Manager
 description: All-in-one point of sale, inventory, CRM, and task management software for associations, clubs, and small businesses.
 og_image: /og.png
@@ -57,6 +62,10 @@ callouts:
 
 plugins:
   - jekyll-remote-theme
+  # Was active via the github-pages gem's default set, never listed here.
+  # The source writes links relative (install/publish.htm); this is what turns
+  # them into /install/publish.htm.
+  - jekyll-relative-links
   - jekyll-target-blank
   - jekyll-sitemap
   - jekyll-seo-tag
