@@ -19,7 +19,7 @@ This website uses [Plausible Analytics](https://plausible.io/), a privacy-friend
 
 ## Contact Form
 
-The contact form on this website is powered by [Tally](https://tally.so/). When you submit the contact form, the information you provide (such as your name, email address, and message) is collected and stored by Tally. This information is used solely to respond to your inquiry. Tally's privacy policy can be found at [tally.so/help/privacy-policy](https://tally.so/help/privacy-policy).
+The contact form on this website submits directly to our own mail service; no third-party form provider receives your data. What you type (your name, email address, subject and message) is emailed to us and used solely to respond to your enquiry. The form is protected by [Cloudflare Turnstile](https://www.cloudflare.com/products/turnstile/), a privacy-preserving alternative to CAPTCHA that does not track you across sites.
 
 ## GSA Manager Application
 

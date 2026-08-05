@@ -95,6 +95,4 @@ GSA Manager works with the hardware you already have.
 
 Interested in GSA Manager? Request a demo or ask about pricing and customizations.
 
-<iframe data-tally-src="https://tally.so/embed/1A7yYO?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1" loading="lazy" width="100%" height="276" frameborder="0" marginheight="0" marginwidth="0" title="GSA Manager-Contact Us"></iframe>
-
-<script>Tally.loadEmbeds();</script>
+{% include contact-form.html %}

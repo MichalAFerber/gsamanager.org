@@ -30,6 +30,14 @@ defaults:
     values:
       sitemap: false
 
+# Contact routing. The site key is public — it ships in the page — but the
+# secret it pairs with lives only on the mailer. mailer_product is the herald
+# registry slug that selects the from address, recipient, Origin allowlist and
+# Turnstile secret; it must match the row for `gsamanager_org`.
+turnstile_sitekey: "0x4AAAAAAD-B7hIU5QqSXReP"
+support_email: "michal@gsamanager.org"
+mailer_product: "gsamanager_org"
+
 remote_theme: just-the-docs/just-the-docs@v0.10.1
 repository: MichalAFerber/gsamanager.org
 
