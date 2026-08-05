@@ -1,0 +1,51 @@
+{%- comment -%}
+  cayman's default layout, overridden here for three reasons:
+
+  * its header buttons are gated on site.github.is_project_page and
+    site.show_downloads, neither of which is true for a site served from its own
+    domain — so "View on GitHub" never rendered at all;
+  * it has no place for an Install link;
+  * its footer credits GitHub Pages and names the repository, where §1 requires
+    the estate credit line on every project.
+
+  Everything else is cayman's, unchanged, so the theme still owns the look.
+{%- endcomment -%}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description }}</h2>
+      <a href="{{ site.repo_url }}" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+      <a href="{{ '/install/publish.htm' | relative_url }}" class="btn">Install GSA Manager</a>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <p class="site-privacy"><a href="{{ '/privacy.html' | relative_url }}">Privacy</a></p>
+
+      <footer class="site-footer">
+        {%- comment -%}
+          §1: the credit line is exact, appears on every project, and the year is
+          rendered at build time — never a literal, so it cannot go stale.
+        {%- endcomment -%}
+        <span class="site-footer-credits">© {{ site.time | date: '%Y' }} | Created with ❤️ by <a href="https://michalferber.dev/" target="_blank" rel="noopener">Michal Ferber</a>, aka <a href="https://techguywithabeard.com/" target="_blank" rel="noopener">TechGuyWithABeard</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
