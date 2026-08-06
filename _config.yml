@@ -5,7 +5,8 @@ url: "https://gsamanager.org"
 # empty value is not nil, so nothing can fill it in.
 baseurl: ""
 title: GSA Manager
-description: All-in-one point of sale, inventory, CRM, and task management software for associations, clubs, and small businesses. Retiring February 2027, after 20 years in production since 2007.
+tagline: Retiring February 2027 after 20 years
+description: Point of sale, inventory, CRM, and task management for associations, clubs, and small businesses. Retiring February 2027 after 20 years in production.
 og_image: /og.png
 
 # Social/SEO image (used by jekyll-seo-tag for og:image)
