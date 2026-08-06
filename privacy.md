@@ -3,6 +3,9 @@ layout: default
 title: Privacy Policy
 nav_exclude: true
 search_exclude: true
+# Pages serves clean URLs — /privacy.html 308s to /privacy — so the canonical
+# seo-tag derives from page.url would point at a redirect.
+canonical_url: https://gsamanager.org/privacy
 ---
 
 # Privacy Policy
