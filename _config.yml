@@ -36,7 +36,7 @@ defaults:
 # registry slug that selects the from address, recipient, Origin allowlist and
 # Turnstile secret; it must match the row for `gsamanager_org`.
 turnstile_sitekey: "0x4AAAAAAD3zZhlPo_O_mrmP"
-support_email: "michal@gsamanager.org"
+support_email: "support@gsamanager.org"
 mailer_product: "gsamanager_org"
 
 remote_theme: pages-themes/cayman@v0.2.0
