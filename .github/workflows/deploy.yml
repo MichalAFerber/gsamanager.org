@@ -51,6 +51,10 @@ jobs:
       - uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
         if: steps.gate.outputs.ok == 'true'
         with:
+          # No .ruby-version file and no ruby directive in the Gemfile, so
+          # setup-ruby has nothing to infer from and errors out. Cloudflare's
+          # build was on 3.3; pin to match what production was built with.
+          ruby-version: '3.3'
           bundler-cache: true
       - name: Build
         if: steps.gate.outputs.ok == 'true'
