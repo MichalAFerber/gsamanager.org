@@ -68,3 +68,5 @@ plugins:
 
 include:
   - .well-known
+  # Jekyll drops underscore-prefixed files; without this the CSP never ships.
+  - _headers

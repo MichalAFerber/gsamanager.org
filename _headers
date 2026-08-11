@@ -1,0 +1,14 @@
+# Cloudflare Pages serves these; Jekyll only copies the file because `_headers`
+# is named in `include:` in _config.yml -- Jekyll drops underscore-prefixed files
+# from _site by default, so removing that line silently removes this policy.
+#
+# Every source below is something the site actually loads, checked against the
+# built output rather than assumed:
+#   script  - Turnstile (contact form) and self-hosted Plausible; 'unsafe-inline'
+#             for the one inline script that drives the form
+#   style   - Google Fonts stylesheet (Open Sans)
+#   font    - fonts.gstatic.com, plus data: for any inlined face
+#   connect - Plausible's event beacon and the mailer that takes the contact POST
+#   frame   - Turnstile renders itself into an iframe
+/*
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://plausible.thompsonblack.us; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://plausible.thompsonblack.us https://mailer.thompsonblack.us; frame-src https://challenges.cloudflare.com; media-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'
