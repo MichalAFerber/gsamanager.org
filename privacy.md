@@ -3,8 +3,11 @@ layout: default
 title: Privacy Policy
 nav_exclude: true
 search_exclude: true
-# Pages serves clean URLs — /privacy.html 308s to /privacy — so the canonical
-# seo-tag derives from page.url would point at a redirect.
+# Pages serves clean URLs, so /privacy.html 308s to /privacy. jekyll-sitemap
+# emits page.url, so without this permalink the sitemap advertised the
+# redirecting .html form while the canonical pointed at /privacy. The built file
+# is still privacy.html — this only moves page.url onto the URL that answers 200.
+permalink: /privacy
 canonical_url: https://gsamanager.org/privacy
 ---
 
